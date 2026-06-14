@@ -2,7 +2,7 @@ const SITE = {
   brand:       "Jitter VPN",
   tagline:     "Seguro. Rápido. Global.",
   description: "Servidores premium optimizados para HTTP Custom y VPN con infraestructura protegida por Cloudflare.",
-  whatsapp:    "5491XXXXXXXXX",   // ← reemplazar con número real
+  whatsapp:    "5493764734171",   // ← reemplazar con número real
   telegram:    "jittervpn",       // ← reemplazar con usuario real
   email:       "",
   color: {
