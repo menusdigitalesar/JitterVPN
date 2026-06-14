@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jitter VPN — Seguro. Rápido. Global.</title>
+  <meta name="description" content="Servidores VPN premium optimizados para HTTP Custom con infraestructura protegida por Cloudflare. Alta velocidad, baja latencia, soporte 24/7." />
+  <meta name="keywords" content="VPN Argentina, HTTP Custom, servidor VPN, Cloudflare, Jitter VPN, VPN rápido" />
+  <meta property="og:title" content="Jitter VPN — Seguro. Rápido. Global." />
+  <meta property="og:description" content="Servidores VPN premium para Argentina. HTTP Custom, Cloudflare, alta estabilidad." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Inter:wght@300..800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Jitter VPN",
+    "description": "Servidores VPN premium optimizados para HTTP Custom con infraestructura Cloudflare",
+    "provider": { "@type": "Organization", "name": "Jitter VPN" },
+    "areaServed": "AR",
+    "serviceType": "VPN Service"
+  }
+  </script>
+</head>
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav" role="banner">
+  <div class="container nav-inner">
+    <a href="#inicio" class="nav-brand" aria-label="Jitter VPN — inicio">
+      <div class="nav-logo-wrap">
+        <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 2L4 8v8c0 7.2 5.2 13.9 12 15.5C23.8 29.9 29 23.2 29 16V8L16 2z" fill="url(#sh1)" opacity=".9"/>
+          <path d="M12 16l3 3 6-6" stroke="#00d4ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="sh1" x1="4" y1="2" x2="28" y2="32" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#00d4ff"/>
+              <stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="nav-name">Jitter<span class="nav-vpn">VPN</span></span>
+      </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks" role="navigation" aria-label="Menú principal">
+      <a href="#planes" class="nav-link">Planes</a>
+      <a href="#caracteristicas" class="nav-link">Características</a>
+      <a href="#como-funciona" class="nav-link">Cómo funciona</a>
+      <a href="#testimonios" class="nav-link">Testimonios</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#contacto" class="nav-cta btn-glow" aria-label="Contactar por WhatsApp">Contratar ahora</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio" aria-label="Presentación">
+  <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+  <div class="hero-grid-overlay" aria-hidden="true"></div>
+  <div class="hero-spotlight" id="heroSpotlight" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+  <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-content">
+      <div class="eyebrow reveal d-1">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        Servidores Premium · Argentina
+      </div>
+      <h1 class="hero-title" id="heroTitle">
+        Tu internet,<br><em>sin límites.</em>
+      </h1>
+      <p class="hero-sub reveal d-3">
+        Servidores VPN optimizados para HTTP Custom con infraestructura protegida por
+        <strong>Cloudflare</strong>. Alta estabilidad, baja latencia y velocidades de hasta
+        <strong>22 Mbps</strong> garantizados.
+      </p>
+      <div class="hero-badges reveal d-4" aria-label="Compatibilidad">
+        <span class="badge">HTTP Custom</span>
+        <span class="badge">Cloudflare</span>
+        <span class="badge badge-soon">Jitter App <em>pronto</em></span>
+      </div>
+      <div class="hero-actions reveal d-5">
+        <a href="#planes" class="btn btn-glow">Ver planes</a>
+        <a href="#como-funciona" class="btn btn-ghost">Cómo funciona</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="shield-wrap" id="shieldWrap">
+        <div class="shield-rings">
+          <div class="ring ring-1"></div>
+          <div class="ring ring-2"></div>
+          <div class="ring ring-3"></div>
+        </div>
+        <div class="shield-core">
+          <svg class="shield-svg" viewBox="0 0 120 140" fill="none">
+            <path d="M60 8L12 30v40c0 31.4 22.6 60.7 48 70 25.4-9.3 48-38.6 48-70V30L60 8z" fill="url(#shieldGrad)" opacity=".95"/>
+            <path d="M44 72l14 14 28-28" stroke="#00d4ff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="shieldGrad" x1="12" y1="8" x2="108" y2="148" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#00d4ff" stop-opacity=".8"/>
+                <stop offset="100%" stop-color="#7c3aed" stop-opacity=".9"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="shield-pulse"></div>
+        </div>
+        <div class="orbit orbit-1">
+          <div class="orbit-dot"></div>
+        </div>
+        <div class="orbit orbit-2">
+          <div class="orbit-dot dot-2"></div>
+        </div>
+        <div class="data-chip chip-1">🔒 Encriptado</div>
+        <div class="data-chip chip-2">⚡ 22 Mbps</div>
+        <div class="data-chip chip-3">🇦🇷 Argentina</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll" aria-label="Desplazar hacia abajo">
+    <span></span>
+    <span></span>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-band" aria-label="Estadísticas">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal d-1">
+        <span class="stat-num ticker" data-target="5000" data-suffix="+">0</span>
+        <span class="stat-label">Usuarios activos</span>
+      </div>
+      <div class="stat-item reveal d-2">
+        <span class="stat-num ticker" data-target="99.9" data-suffix="%" data-dec="1">0</span>
+        <span class="stat-label">Uptime garantizado</span>
+      </div>
+      <div class="stat-item reveal d-3">
+        <span class="stat-num ticker" data-target="22" data-suffix=" Mbps">0</span>
+        <span class="stat-label">Velocidad promedio</span>
+      </div>
+      <div class="stat-item reveal d-4">
+        <span class="stat-num">24/7</span>
+        <span class="stat-label">Soporte disponible</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap" aria-hidden="true">
+  <div class="marquee-track">
+    <span>HTTP Custom</span><span class="sep">✦</span>
+    <span>Cloudflare</span><span class="sep">✦</span>
+    <span>Alta velocidad</span><span class="sep">✦</span>
+    <span>Baja latencia</span><span class="sep">✦</span>
+    <span>Anti-DDoS</span><span class="sep">✦</span>
+    <span>Servidor Argentina</span><span class="sep">✦</span>
+    <span>CloudFront próximo</span><span class="sep">✦</span>
+    <span>HTTP Custom</span><span class="sep">✦</span>
+    <span>Cloudflare</span><span class="sep">✦</span>
+    <span>Alta velocidad</span><span class="sep">✦</span>
+    <span>Baja latencia</span><span class="sep">✦</span>
+    <span>Anti-DDoS</span><span class="sep">✦</span>
+    <span>Servidor Argentina</span><span class="sep">✦</span>
+    <span>CloudFront próximo</span><span class="sep">✦</span>
+  </div>
+</div>
+
+<!-- PLANES -->
+<section class="section" id="planes" aria-labelledby="planes-titulo">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Nuestros planes</p>
+      <h2 id="planes-titulo">Elige tu conexión ideal</h2>
+      <p class="section-sub">Sin contratos largos. Sin complicaciones. Actívate en minutos.</p>
+    </div>
+
+    <div class="plans-grid">
+
+      <!-- PLAN DIARIO -->
+      <article class="plan-card reveal d-1" aria-label="Plan VPN Diario">
+        <div class="plan-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="plan-name">VPN Diario</h3>
+        <div class="plan-price">
+          <span class="plan-currency">$</span>
+          <span class="plan-amount">XXX</span>
+          <span class="plan-period">/ día</span>
+        </div>
+        <p class="plan-desc">Acceso 24 horas. Ideal para probar nuestros servidores.</p>
+        <ul class="plan-features" aria-label="Características incluidas">
+          <li><span class="feat-check" aria-hidden="true"></span>1 conexión simultánea</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Compatible con HTTP Custom</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Servidor Argentina 🇦🇷</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Soporte por chat</li>
+        </ul>
+        <a href="#contacto" class="btn btn-outline plan-btn">Contratar</a>
+      </article>
+
+      <!-- PLAN MENSUAL (destacado) -->
+      <article class="plan-card plan-featured reveal d-2" aria-label="Plan VPN Mensual - Más popular">
+        <div class="plan-badge">Más elegido</div>
+        <div class="border-beam" aria-hidden="true"></div>
+        <div class="plan-icon plan-icon-featured" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7l9 5 9-5-9-5zM3 12l9 5 9-5M3 17l9 5 9-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="plan-name">VPN Mensual</h3>
+        <div class="plan-price">
+          <span class="plan-currency">$</span>
+          <span class="plan-amount">XXX</span>
+          <span class="plan-period">/ mes</span>
+        </div>
+        <p class="plan-desc">El más elegido. El mejor precio por día de todos los planes.</p>
+        <ul class="plan-features" aria-label="Características incluidas">
+          <li><span class="feat-check" aria-hidden="true"></span>2 conexiones simultáneas</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Compatible con HTTP Custom</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Servidor Argentina 🇦🇷</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Soporte prioritario</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Renovación fácil</li>
+        </ul>
+        <a href="#contacto" class="btn btn-glow plan-btn">Contratar ahora</a>
+      </article>
+
+      <!-- CLOUDFLARE -->
+      <article class="plan-card reveal d-3" aria-label="Plan Cloudflare por IP">
+        <div class="plan-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="plan-name">Cloudflare por IP</h3>
+        <div class="plan-price">
+          <span class="plan-currency">$</span>
+          <span class="plan-amount">XXX</span>
+          <span class="plan-period">/ IP</span>
+        </div>
+        <p class="plan-desc">Protección y bypass de Cloudflare para tu IP fija.</p>
+        <ul class="plan-features" aria-label="Características incluidas">
+          <li><span class="feat-check" aria-hidden="true"></span>IP dedicada</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Protección Cloudflare</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Anti-DDoS avanzado</li>
+          <li><span class="feat-check" aria-hidden="true"></span>Configuración incluida</li>
+        </ul>
+        <a href="#contacto" class="btn btn-outline plan-btn">Contratar</a>
+      </article>
+
+      <!-- CLOUDFRONT (próximo) -->
+      <article class="plan-card plan-soon reveal d-4" aria-label="Plan CloudFront - Próximamente">
+        <div class="plan-badge plan-badge-soon">Próximamente</div>
+        <div class="plan-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="plan-name">CloudFront</h3>
+        <div class="plan-price soon-price">
+          <span class="plan-amount">En desarrollo</span>
+        </div>
+        <p class="plan-desc">Tecnología CloudFront integrada con nuestra infraestructura. Pronto disponible.</p>
+        <ul class="plan-features" aria-label="Características planeadas">
+          <li><span class="feat-check feat-dim" aria-hidden="true"></span>Tecnología AWS CloudFront</li>
+          <li><span class="feat-check feat-dim" aria-hidden="true"></span>CDN global</li>
+          <li><span class="feat-check feat-dim" aria-hidden="true"></span>Ultra baja latencia</li>
+          <li><span class="feat-check feat-dim" aria-hidden="true"></span>App Jitter integrada</li>
+        </ul>
+        <button class="btn btn-disabled plan-btn" disabled aria-disabled="true">Próximamente</button>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CARACTERÍSTICAS -->
+<section class="section section-dark" id="caracteristicas" aria-labelledby="feat-titulo">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Por qué elegirnos</p>
+      <h2 id="feat-titulo">Infraestructura de nivel empresarial</h2>
+      <p class="section-sub">Tecnología que miles de usuarios ya confían para su conexión diaria.</p>
+    </div>
+
+    <div class="feat-grid">
+      <article class="feat-card reveal d-1">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Alta velocidad</h3>
+        <p>Velocidades de hasta 22 Mbps con servidores optimizados para streaming y navegación sin cortes.</p>
+      </article>
+
+      <article class="feat-card reveal d-2">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Protección total</h3>
+        <p>Infraestructura protegida por Cloudflare con anti-DDoS avanzado. Tu conexión siempre protegida.</p>
+      </article>
+
+      <article class="feat-card reveal d-3">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>99.9% de uptime</h3>
+        <p>Disponibilidad garantizada las 24 horas. Infraestructura redundante que nunca te deja sin conexión.</p>
+      </article>
+
+      <article class="feat-card reveal d-4">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.18 6.18l.95-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Soporte 24/7</h3>
+        <p>Equipo disponible por WhatsApp y Telegram. Respondemos en minutos, no en días.</p>
+      </article>
+
+      <article class="feat-card reveal d-1">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>HTTP Custom listo</h3>
+        <p>Configuración optimizada y lista para usar con HTTP Custom desde el primer minuto.</p>
+      </article>
+
+      <article class="feat-card reveal d-2">
+        <div class="feat-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Activación inmediata</h3>
+        <p>Recibís tus credenciales al instante después del pago. En línea en menos de 5 minutos.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO FUNCIONA -->
+<section class="section" id="como-funciona" aria-labelledby="pasos-titulo">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Proceso simple</p>
+      <h2 id="pasos-titulo">Conectate en 3 pasos</h2>
+    </div>
+
+    <div class="steps-wrap">
+      <div class="steps-line" aria-hidden="true"></div>
+      <ol class="steps-grid" aria-label="Pasos para conectarse">
+        <li class="step reveal d-1">
+          <div class="step-num" aria-hidden="true">01</div>
+          <div class="step-body">
+            <h3>Elegí tu plan</h3>
+            <p>Seleccioná el plan que mejor se adapte a tus necesidades: diario, mensual o Cloudflare.</p>
+          </div>
+        </li>
+        <li class="step reveal d-2">
+          <div class="step-num" aria-hidden="true">02</div>
+          <div class="step-body">
+            <h3>Contactanos</h3>
+            <p>Escribinos por WhatsApp o Telegram. Procesamos tu pago de forma rápida y segura.</p>
+          </div>
+        </li>
+        <li class="step reveal d-3">
+          <div class="step-num" aria-hidden="true">03</div>
+          <div class="step-body">
+            <h3>¡Conectate!</h3>
+            <p>Recibís tus credenciales al instante. Configuralo en HTTP Custom y disfrutá de tu VPN.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="section section-dark" id="testimonios" aria-labelledby="test-titulo">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Clientes satisfechos</p>
+      <h2 id="test-titulo">Lo que dicen nuestros usuarios</h2>
+    </div>
+
+    <div class="reviews-grid">
+      <article class="review reveal d-1">
+        <div class="review-stars" aria-label="5 estrellas">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <blockquote>
+          <p>"Probé mil VPNs y esta es la única que me da velocidad real. Llegué a 22 Mbps con HTTP Custom. Increíble."</p>
+        </blockquote>
+        <footer class="review-author">
+          <div class="review-avatar" aria-hidden="true">MR</div>
+          <div>
+            <strong>Matías R.</strong>
+            <span>Plan Mensual</span>
+          </div>
+        </footer>
+      </article>
+
+      <article class="review review-highlight reveal d-2">
+        <div class="review-tag" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Otro cliente satisfecho
+        </div>
+        <div class="review-stats">
+          <div class="review-stat">
+            <span class="rs-label">Tecnología</span>
+            <span class="rs-val">☁️ CloudFront</span>
+          </div>
+          <div class="review-stat">
+            <span class="rs-label">Servidor</span>
+            <span class="rs-val">🇦🇷 Argentina</span>
+          </div>
+          <div class="review-stat">
+            <span class="rs-label">Velocidad</span>
+            <span class="rs-val rs-speed">🚀 22 Mbps</span>
+          </div>
+        </div>
+        <blockquote>
+          <p>"Conexión estable y rápida. Exactamente lo que prometieron."</p>
+        </blockquote>
+        <footer class="review-author">
+          <div class="review-avatar rv-2" aria-hidden="true">LG</div>
+          <div>
+            <strong>Lucas G.</strong>
+            <span>Plan Mensual</span>
+          </div>
+        </footer>
+      </article>
+
+      <article class="review reveal d-3">
+        <div class="review-stars" aria-label="5 estrellas">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+        </div>
+        <blockquote>
+          <p>"El soporte es rapidísimo. Me ayudaron a configurarlo en 5 minutos y la velocidad es impresionante."</p>
+        </blockquote>
+        <footer class="review-author">
+          <div class="review-avatar rv-3" aria-hidden="true">SA</div>
+          <div>
+            <strong>Sofía A.</strong>
+            <span>Cloudflare por IP</span>
+          </div>
+        </footer>
+      </article>
+    </div>
+
+    <!-- Contador de clientes satisfechos -->
+    <div class="social-proof reveal">
+      <div class="sp-avatars" aria-hidden="true">
+        <div class="sp-av" style="background: #00d4ff">M</div>
+        <div class="sp-av" style="background: #7c3aed">L</div>
+        <div class="sp-av" style="background: #f59e0b">S</div>
+        <div class="sp-av" style="background: #10b981">A</div>
+        <div class="sp-av" style="background: #ef4444">R</div>
+      </div>
+      <p><strong>+5.000 usuarios</strong> ya confían en Jitter VPN</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" aria-labelledby="faq-titulo">
+  <div class="container faq-wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2 id="faq-titulo">Todo lo que necesitás saber</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item reveal d-1">
+        <summary>¿Con qué aplicaciones es compatible?</summary>
+        <div class="faq-body">
+          <p>Actualmente nuestros servidores son compatibles con <strong>HTTP Custom</strong>. Próximamente lanzamos nuestra propia app <strong>Jitter VPN</strong> para una experiencia aún más fácil y rápida.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal d-2">
+        <summary>¿Cómo me activan el servicio?</summary>
+        <div class="faq-body">
+          <p>Una vez confirmado tu pago, recibís las credenciales por WhatsApp o Telegram de forma inmediata. El proceso tarda menos de 5 minutos.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal d-3">
+        <summary>¿Qué diferencia hay entre VPN y Cloudflare por IP?</summary>
+        <div class="faq-body">
+          <p>El <strong>VPN</strong> encripta todo tu tráfico y te da acceso a servidores premium. El <strong>Cloudflare por IP</strong> es ideal si tenés una IP fija y querés protegerla y darle bypass con la infraestructura de Cloudflare.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal d-4">
+        <summary>¿Qué velocidades puedo esperar?</summary>
+        <div class="faq-body">
+          <p>Nuestros usuarios reportan velocidades de <strong>10 a 22 Mbps</strong> dependiendo de su conexión base. La velocidad final depende de tu ISP y tipo de conexión.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal d-1">
+        <summary>¿Puedo probar antes de comprar el plan mensual?</summary>
+        <div class="faq-body">
+          <p>Sí. Tenemos el <strong>Plan Diario</strong> justamente para eso. Probá 24 horas y si quedás conforme, pasás al mensual con todo el beneficio de precio.</p>
+        </div>
+      </details>
+
+      <details class="faq-item reveal d-2">
+        <summary>¿Qué pasa si tengo un problema con la conexión?</summary>
+        <div class="faq-body">
+          <p>Nuestro soporte está disponible <strong>24/7 por WhatsApp y Telegram</strong>. Respondemos en minutos. Si el problema es de nuestro lado, lo resolvemos o extendemos tu plan sin costo.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO / CTA -->
+<section class="section cta-section" id="contacto" aria-labelledby="cta-titulo">
+  <div class="cta-glow" aria-hidden="true"></div>
+  <div class="container cta-inner">
+    <div class="section-head reveal">
+      <p class="eyebrow">¿Listo para conectarte?</p>
+      <h2 id="cta-titulo">Empezá hoy mismo</h2>
+      <p class="section-sub">Escribinos y en minutos tenés tu acceso. Sin complicaciones.</p>
+    </div>
+    <div class="cta-buttons reveal d-2">
+      <a href="https://wa.me/5491XXXXXXXXX?text=Hola!%20quiero%20contratar%20Jitter%20VPN"
+         class="btn btn-glow btn-lg"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Contactar por WhatsApp">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        WhatsApp
+      </a>
+      <a href="https://t.me/jittervpn"
+         class="btn btn-ghost btn-lg"
+         target="_blank" rel="noopener noreferrer"
+         aria-label="Contactar por Telegram">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+        </svg>
+        Telegram
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <div class="nav-logo-wrap">
+        <svg class="nav-logo-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M16 2L4 8v8c0 7.2 5.2 13.9 12 15.5C23.8 29.9 29 23.2 29 16V8L16 2z" fill="url(#sh2)" opacity=".9"/>
+          <path d="M12 16l3 3 6-6" stroke="#00d4ff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="sh2" x1="4" y1="2" x2="28" y2="32" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#00d4ff"/>
+              <stop offset="100%" stop-color="#7c3aed"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="nav-name">Jitter<span class="nav-vpn">VPN</span></span>
+      </div>
+      <p class="footer-desc">Servidores premium optimizados con infraestructura Cloudflare. Alta estabilidad, baja latencia.</p>
+    </div>
+    <nav class="footer-links" aria-label="Links del footer">
+      <a href="#planes">Planes</a>
+      <a href="#caracteristicas">Características</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <p class="footer-copy">&copy; 2025 Jitter VPN. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/5491XXXXXXXXX?text=Hola!%20quiero%20contratar%20Jitter%20VPN"
+   class="fab-wa"
+   target="_blank" rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- BACK TO TOP -->
+<button class="back-top" id="backTop" aria-label="Volver al inicio">
+  <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+    <path d="M18 15l-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
